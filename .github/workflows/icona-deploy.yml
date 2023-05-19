@@ -19,6 +19,7 @@ jobs:
         uses: the-coding-turtle/ga-yaml-parser@v0.1.2
         with:
           file: '.icona/config.yml'
+          export_to_envs: true
 
       - name: Display read-yaml output
         run: echo "${{ steps.yaml-data.outputs.result }}"
