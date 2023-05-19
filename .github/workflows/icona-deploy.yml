@@ -2,10 +2,10 @@ on:
   pull_request:
     types:
       - opened
-    branches:
-      - 'icona-deploy-**'
-    paths:
-      - '.icona/release.md'
+    # branches:
+    #   - 'icona-deploy-**'
+    # paths:
+    #   - '.icona/release.md'
    
 jobs:
   test:
