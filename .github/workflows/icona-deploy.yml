@@ -13,15 +13,11 @@ jobs:
     name: Test Job
     steps:
       - uses: actions/checkout@v3
-
-      - name: Read icona config yaml
-        id: yaml-data
-        uses: the-coding-turtle/ga-yaml-parser@v0.1.2
+     
+      - name: Extract SVG from figma
+        uses: daangn/icona/packages/figma-svg-extract-action
         with:
-          file: '.icona/config.yml'
-          export_to_envs: true
-
-      - name: Display read-yaml output
-        run: 
-          echo "${{ steps.yaml-data.outputs.result.icon-frame-id }}"
-          echo "${{ steps.yaml-data.outputs.result.figma-file-key }}"
+          figma-file-key: jcGX8Gi8Vq8brdeou6QJ6X
+          figma-icon-frame-id: 672:688
+          figma-token: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
