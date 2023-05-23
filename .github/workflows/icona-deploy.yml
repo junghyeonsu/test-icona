@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
      
       - name: Extract SVG from figma
-        uses: junghyeonsu/figma-svg-extract-action
+        uses: junghyeonsu/figma-svg-extract-action@v0.0.1
         with:
           figma-file-key: jcGX8Gi8Vq8brdeou6QJ6X
           figma-icon-frame-id: 672:688
