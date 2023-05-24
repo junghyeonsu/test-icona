@@ -2,10 +2,10 @@ on:
   pull_request:
     types:
       - opened
-    # branches:
-    #   - 'icona-deploy-**'
-    # paths:
-    #   - '.icona/release.md'
+    branches:
+      - 'icona-deploy-**'
+    paths:
+      - '.icona/release.md'
    
 jobs:
   test:
@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
      
-      - name: Extract SVG from figma
-        uses: daangn/icona/packages/figma-svg-extract-action@v0.0.11
-        with:
-          figma-file-key: jcGX8Gi8Vq8brdeou6QJ6X
-          figma-icon-frame-id: 672:688
-          figma-token: ${{ secrets.FIGMA_ACCESS_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Extract SVG from figma
+      #   uses: daangn/icona/packages/figma-svg-extract-action@v0.0.11
+      #   with:
+      #     figma-file-key: jcGX8Gi8Vq8brdeou6QJ6X
+      #     figma-icon-frame-id: 672:688
+      #     figma-token: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
