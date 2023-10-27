@@ -22,7 +22,20 @@ generate({
     react: {
       active: true, // you can disable react generator if you set false
       path: "react", // will generate react component files in react folder
-      svgrConfig: {},
+      svgrConfig: {
+        jsxRuntime: "classic",
+        plugins: [
+          "@svgr/plugin-svgo",
+          "@svgr/plugin-jsx",
+          "@svgr/plugin-prettier",
+        ],
+        prettierConfig: {
+          tabWidth: 2,
+          useTabs: false,
+          singleQuote: true,
+          semi: true,
+        },
+      },
     },
   },
 });
