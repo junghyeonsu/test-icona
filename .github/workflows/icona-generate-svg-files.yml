@@ -34,7 +34,7 @@ jobs:
 
       - name: Generate Stuffs
         run: |
-          yarn generate:icona
+          yarn gen
           git add .
           git commit -m "[Icona] Generate Files"
           git push
