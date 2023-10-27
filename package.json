@@ -1,0 +1,14 @@
+{
+  "name": "test-icona",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": "https://github.com/junghyeonsu/test-icona.git",
+  "author": "junghyeonsu <jung660317@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "gen": "node ./icona.config.js"
+  },
+  "dependencies": {
+    "@icona/generator": "^0.0.15"
+  }
+}
