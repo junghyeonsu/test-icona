@@ -201,6 +201,11 @@
     svg2vectordrawable "^2.9.1"
     svgo "^3.0.2"
 
+"@icona/types@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@icona/types/-/types-0.0.13.tgz#247d189705e1b54cd19f6749e77c9b9d670e36b8"
+  integrity sha512-uXgAaMsiXjKksq+xR8/GNrBB0py0d+G37K2ENjhbgQw48MdK47SHhnqBDwQF6CB7dFrN7tDCDzEiW0xo/k8qOw==
+
 "@icona/utils@^0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@icona/utils/-/utils-0.0.13.tgz#83dd960728dd627e22bd6f386697f2ec080eae18"
@@ -294,7 +299,7 @@
     "@svgr/babel-plugin-transform-react-native-svg" "8.1.0"
     "@svgr/babel-plugin-transform-svg-component" "8.0.0"
 
-"@svgr/core@^8.0.0":
+"@svgr/core@^8.0.0", "@svgr/core@^8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@svgr/core/-/core-8.1.0.tgz#41146f9b40b1a10beaf5cc4f361a16a3c1885e88"
   integrity sha512-8QqtOQT5ACVlmsvKOJNEaWmRPmcojMOzCz4Hs2BGG/toAp/K38LcsMRyLp349glq5AzJbCEeimEoxaX6v/fLrA==
